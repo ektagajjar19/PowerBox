@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "cf55053a81a0492b92eb2ea68dc90844"
+name = "Power Box"
+handle = "power-box"
+application_url = "https://investors-whale-investment-winter.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "demo1-demo.myshopify.com"
+
+[auth]
+redirect_urls = [
+  "https://investors-whale-investment-winter.trycloudflare.com/auth/callback",
+  "https://investors-whale-investment-winter.trycloudflare.com/auth/shopify/callback",
+  "https://investors-whale-investment-winter.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
